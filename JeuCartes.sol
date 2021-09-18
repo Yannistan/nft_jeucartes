@@ -8,9 +8,6 @@ contract JeuCartes is ERC721, Ownable, VRFConsumerBase {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     
-    bytes32 internal keyHash;
-    uint256 internal fee;
-    
     uint256 public randomResult;
     
     enum Raretetype  {rarete1, rarete2, rarete3, rarete4, rarete5}
